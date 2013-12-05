@@ -59,7 +59,7 @@ def moduleRun(am, gm, se, sam, lg, rc, errs):
     #Add your main loop code below
     while True:
             sendArdunioMessage(moduleName(),"getLevel")
-    if getLevel = "high":
+    if getLevel == "high":
     	log (moduleName(), "Flow")
     	sendArdunioMessage(moduleName(),"flowWater")
     	addMetric(floatSwitch, 1, moduleName())
