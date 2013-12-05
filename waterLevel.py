@@ -59,14 +59,15 @@ def moduleRun(am, gm, se, sam, lg, rc, errs):
     #Add your main loop code below
     while True:
             sendArdunioMessage(moduleName(),"getLevel")
-            
-        if getLevel = "high":
-    		log (moduleName(), "Flow")
-    		sendArdunioMessage(moduleName(),"flowWater")
-        elif
-        	log (moduleName(), "Don't Flow") 
-        	sendArdunioMessage(moduleName(),"nowatta")
-        pass
+    if getLevel = "high":
+    	log (moduleName(), "Flow")
+    	sendArdunioMessage(moduleName(),"flowWater")
+    	addMetric(floatSwitch, 1, moduleName())
+    elif
+        log (moduleName(), "Don't Flow") 
+        sendArdunioMessage(moduleName(),"nowatta")
+		addMetric(floatSwitch, 0, moduleName())
+    pass
     
 #Returns the author of the module    
 def moduleAuthor():
