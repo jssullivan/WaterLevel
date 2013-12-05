@@ -63,7 +63,7 @@ def moduleRun(am, gm, se, sam, lg, rc, errs):
     	log (moduleName(), "Flow")
     	sendArdunioMessage(moduleName(),"flowWater")
     	addMetric(floatSwitch, 1, moduleName())
-    elif
+    elif:
         log (moduleName(), "Don't Flow") 
         sendArdunioMessage(moduleName(),"nowatta")
 		addMetric(floatSwitch, 0, moduleName())
